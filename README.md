@@ -36,7 +36,7 @@ Catches network errors and timeouts with retries to prevent crashes.
 
 Logs and skips unexpected response codes safely.
 
-📄 2. Pagination & Completeness
+2. Pagination & Completeness
 
 Supports pagination to fetch thousands of issues across multiple API pages.
 
@@ -46,7 +46,7 @@ Prevents duplication by fetching based on the startAt index.
 
 Stops automatically when no more results are returned.
 
-🧠 3. Data Quality & Schema Handling
+3. Data Quality & Schema Handling
 
 Uses .get() for safe access to fields, preventing KeyErrors on missing data.
 
@@ -58,7 +58,7 @@ Writes using UTF-8 encoding to avoid character encoding issues.
 
 Aggregates long descriptions and comments safely without breaking format.
 
-💾 4. Reliability & Fault Tolerance
+4. Reliability & Fault Tolerance
 
 Checkpoint files ensure progress is saved and can resume after crashes.
 
@@ -68,7 +68,7 @@ Skips problematic records instead of halting the pipeline.
 
 Avoids duplicate records by processing one unique page index at a time.
 
-🧩 5. Data Transformation & Output
+5. Data Transformation & Output
 
 Ensures consistent JSONL schema with all key fields present (even if empty).
 
@@ -78,7 +78,7 @@ Escapes special characters so every line remains valid JSON.
 
 Adds derived LLM tasks (summarization, classification, QnA) for downstream use.
 
-🚀 6. Performance & Ethical Considerations
+6. Performance & Ethical Considerations
 
 Includes delays and rate-limit handling to respect Jira’s public API limits.
 
@@ -95,4 +95,5 @@ Add async parallel scraping for more projects.
 Store data in cloud storage (S3, GCS).
 
 Add schema validation and deduplication.
+
 
