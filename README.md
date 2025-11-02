@@ -1,4 +1,5 @@
 🧾 Apache Jira Scraper and Transformer
+
 **Overview**
 
 This project scrapes public issue data from Apache’s Jira instance for selected projects (SPARK, HADOOP, KAFKA) and converts it into structured JSONL suitable for LLM fine-tuning.
@@ -94,3 +95,4 @@ Add async parallel scraping for more projects.
 Store data in cloud storage (S3, GCS).
 
 Add schema validation and deduplication.
+
