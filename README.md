@@ -1,9 +1,9 @@
 🧾 Apache Jira Scraper and Transformer
-Overview
+**Overview**
 
 This project scrapes public issue data from Apache’s Jira instance for selected projects (SPARK, HADOOP, KAFKA) and converts it into structured JSONL suitable for LLM fine-tuning.
 
-Features
+**Features**
 
 Fault-tolerant scraping (retries, rate-limiting, checkpointing)
 
@@ -11,11 +11,11 @@ Structured JSONL output for LLM tasks
 
 Extensible to multiple projects
 
-Setup
+**Setup**
 pip install requests
 python run_pipeline.py
 
-Architecture
+**Architecture**
 
 jira_scraper.py: Fetches and saves raw issue data.
 
@@ -23,7 +23,7 @@ transform_to_jsonl.py: Transforms raw JSON into clean, text-based JSONL.
 
 run_pipeline.py: Orchestrates the full workflow.
 
-Edge Cases Handled
+**Edge Cases Handled**
 
 1. Network & API Failures
 
@@ -87,7 +87,7 @@ Works only with publicly available Jira data (no private scraping).
 
 Can be extended for parallel execution or date-based batching for efficiency.
 
-Future Improvements
+**Future Improvements**
 
 Add async parallel scraping for more projects.
 
